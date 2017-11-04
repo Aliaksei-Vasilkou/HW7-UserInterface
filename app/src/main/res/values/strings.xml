@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HW7-UserInterface</string>
+    <string name="text_view_stories_name">Stories</string>
+    <string name="text_view_watch_all_name">Watch all</string>
 </resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorLightGray"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        style="@style/nav_buttons_style"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home_black"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:tint="@color/colorTintWhite"
+        android:layout_weight="1"
+        android:src="@drawable/ic_search_black"
+        style="@style/nav_buttons_style"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:tint="@color/colorTintWhite"
+        style="@style/nav_buttons_style"
+        android:layout_weight="1"
+        android:src="@drawable/ic_add_box_black"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:tint="@color/colorTintWhite"
+        style="@style/nav_buttons_style"
+        android:layout_weight="1"
+        android:src="@drawable/ic_favorite_black"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:tint="@color/colorTintWhite"
+        style="@style/nav_buttons_style"
+        android:layout_weight="1"
+        android:src="@drawable/ic_person_black"/>
+
+</LinearLayout>
