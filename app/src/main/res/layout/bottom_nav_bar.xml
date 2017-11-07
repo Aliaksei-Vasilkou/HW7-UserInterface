@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@color/colorLightGray"
-              android:orientation="horizontal">
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        style="@style/nav_buttons_style"
-        android:layout_weight="1"
-        android:src="@drawable/ic_home_black"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/light_grey_panels">
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:tint="@color/colorTintWhite"
-        android:layout_weight="1"
-        android:src="@drawable/ic_search_black"
-        style="@style/nav_buttons_style"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/separator_line"/>
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:tint="@color/colorTintWhite"
-        style="@style/nav_buttons_style"
-        android:layout_weight="1"
-        android:src="@drawable/ic_add_box_black"/>
+        <LinearLayout
+                      xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:tint="@color/colorTintWhite"
-        style="@style/nav_buttons_style"
-        android:layout_weight="1"
-        android:src="@drawable/ic_favorite_black"/>
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_home_black_24dp"/>
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:tint="@color/colorTintWhite"
-        style="@style/nav_buttons_style"
-        android:layout_weight="1"
-        android:src="@drawable/ic_person_black"/>
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_search_black_24dp"/>
 
-</LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_add_box_black_24dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_favorite_black_24dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_person_black_24dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</merge>

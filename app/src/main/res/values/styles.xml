@@ -12,4 +12,52 @@
         <item name="android:layout_margin">8dp</item>
     </style>
 
+    <style name="post_bottom_buttons">
+        <item name="android:layout_marginLeft">@dimen/large_dim_12dp</item>
+    </style>
+
+    <style name="light_grey_panels">
+        <item name="android:background">@color/colorLightGray</item>
+    </style>
+
+    <style name="white_panels">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="stories_card_style">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_margin">@dimen/medium_dim_8dp</item>
+        <item name="android:innerRadius">1dp</item>
+        <item name="android:shape">ring</item>
+        <item name="android:thicknessRatio">2</item>
+    </style>
+
+    <style name="stories_card_images_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="small_card_style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_margin">@dimen/small_dim_4dp</item>
+        <item name="android:innerRadius">0dp</item>
+        <item name="android:shape">ring</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:thicknessRatio">1</item>
+    </style>
+
+    <style name="small_card_image_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
 </resources>

@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@color/colorLightGray"
-              android:orientation="horizontal">
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/iv_camera"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_margin="8dp"
-        android:src="@drawable/ic_photo_camera"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/light_grey_panels">
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="8dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/ic_instagram_logo"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:rotation="-35"
-        android:src="@drawable/ic_send"
-        android:layout_gravity="center_vertical"
-        android:layout_margin="8dp"/>
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="@dimen/medium_dim_8dp"
+                app:srcCompat="@drawable/ic_camera_36dp"/>
 
-</LinearLayout>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_instagram_logo"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/medium_dim_8dp"
+                android:rotation="-35"
+                app:srcCompat="@drawable/ic_send_black_32dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/separator_line"/>
+
+    </LinearLayout>
+</merge>
