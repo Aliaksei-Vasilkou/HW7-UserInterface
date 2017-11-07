@@ -25,8 +25,8 @@
     </style>
 
     <style name="stories_card_style">
-        <item name="android:layout_width">68dp</item>
-        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
         <item name="android:layout_margin">@dimen/medium_dim_8dp</item>
         <item name="android:innerRadius">1dp</item>
         <item name="android:shape">ring</item>
@@ -57,6 +57,14 @@
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="textColorBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="textColorBlack.Bold">
+        <item name="android:textStyle">bold</item>
     </style>
 
 

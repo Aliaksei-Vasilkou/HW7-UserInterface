@@ -1,48 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout style="@style/white_panels"
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                style="@style/white_panels"
                 android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/post_header"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF">
 
         <android.support.v7.widget.CardView
             android:id="@+id/small_logo"
-            app:cardCornerRadius="16dp"
-            style="@style/small_card_style">
+            style="@style/small_card_style"
+            app:cardCornerRadius="16dp">
 
             <ImageView
                 android:id="@+id/logo_1"
-                android:src="@drawable/e60_front"
-                style="@style/small_card_image_style">
+                style="@style/small_card_image_style"
+                android:src="@drawable/e60_front">
             </ImageView>
 
         </android.support.v7.widget.CardView>
 
         <TextView
             android:id="@+id/group_name"
+            style="@style/textColorBlack.Bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_dim_4dp"
             android:layout_toEndOf="@id/small_logo"
             android:layout_toRightOf="@id/small_logo"
             android:text="Autogrodno.by"
-            android:textStyle="bold"/>
+            android:textColor="#000000"/>
 
         <TextView
             android:id="@+id/text_view_location"
+            style="@style/textColorBlack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Гродно, центр - Grodno city center"
-            android:layout_margin="@dimen/small_dim_4dp"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/small_logo"
-            android:layout_toEndOf="@+id/small_logo"/>
+            android:layout_alignLeft="@+id/group_name"
+            android:layout_alignStart="@+id/group_name"
+            android:layout_below="@+id/group_name"
+            android:layout_marginBottom="@dimen/small_dim_4dp"
+            android:text="Гродно, центр - Grodno city center"/>
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="24dp"
@@ -59,18 +61,18 @@
         android:id="@+id/post_image"
         android:layout_width="match_parent"
         android:layout_height="245dp"
-        android:scaleType="centerCrop"
         android:layout_below="@id/post_header"
+        android:scaleType="centerCrop"
         android:src="@drawable/mercedes_img"/>
 
     <RelativeLayout
         android:id="@+id/post_buttons_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/medium_dim_8dp"
-        android:layout_below="@+id/post_image"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/post_image"
+        android:padding="@dimen/medium_dim_8dp">
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/image_view_favorite"
@@ -120,6 +122,7 @@
 
             <TextView
                 android:id="@+id/text_view_likes_count"
+                style="@style/textColorBlack.Bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="388 likes"
@@ -127,6 +130,7 @@
 
             <TextView
                 android:id="@+id/text_view_post_comments"
+                style="@style/textColorBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Author: comment... blablabla"/>

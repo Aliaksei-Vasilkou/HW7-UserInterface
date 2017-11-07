@@ -2,9 +2,11 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
+        android:id="@+id/top_nav_bar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:layout_alignParentTop="true"
         style="@style/light_grey_panels">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
