@@ -3,9 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorLightGray">#FAFAFA</color>
-    <color name="colorGray">#989898</color>
     <color name="colorTintWhite">#AAAAAA</color>
-    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#989898</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#2f92ed</color>
+    <color name="background_color_LightGray">#FAFAFA</color>
+    <color name="background_color_White">#FFFFFF</color>
 </resources>

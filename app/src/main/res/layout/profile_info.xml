@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tool="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        style="@style/white_panels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_top_bar">
+
+        <RelativeLayout
+            android:id="@+id/panel_profile_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/user_profile_card"
+                style="@style/card_style.UserProfile"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/image_card_1"
+                    style="@style/card_images_style"
+                    android:src="@drawable/e60_front">
+                </ImageView>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/panel_profile_counters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/user_profile_card"
+                android:layout_toRightOf="@id/user_profile_card"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/profile_counter_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test_count"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_view_posts"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/profile_counter_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test_count"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_view_followers"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/profile_counter_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test_count"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_view_following"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/panel_profile_counters"
+                android:layout_marginEnd="@dimen/extra_large_dim_16dp"
+                android:layout_marginRight="@dimen/extra_large_dim_16dp"
+                android:layout_marginTop="@dimen/small_dim_4dp"
+                android:layout_toEndOf="@id/user_profile_card"
+                android:layout_toRightOf="@id/user_profile_card"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/profile_buttons_style"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="@dimen/small_dim_4dp"
+                    android:layout_marginRight="@dimen/small_dim_4dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/button_message_name"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/profile_buttons_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.33">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_person_add_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/small_dim_4dp"
+                    android:layout_marginStart="@dimen/small_dim_4dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/button_border"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_profile_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/panel_profile_info"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_profile_description"
+                style="@style/profile_description_panel_style"
+                android:text="Some profile description"/>
+
+            <TextView
+                android:id="@+id/text_view_profile_location"
+                style="@style/profile_description_panel_style"
+                android:text="Belarus, Grodno"/>
+
+            <TextView
+                android:id="@+id/text_vies_profile_tags"
+                style="@style/profile_description_panel_style"
+                android:text="#some_tags, #someone_else_tag"/>
+
+            <LinearLayout
+                style="@style/profile_description_panel_style"
+                android:layout_marginBottom="@dimen/extra_large_dim_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/medium_dim_8dp"
+                    android:layout_marginRight="@dimen/medium_dim_8dp"
+                    android:text="Followed by"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/profile_followed_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="some_user_name"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@drawable/separator_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/text_view_call_name"
+                android:textColor="@color/colorBlue"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@drawable/separator_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/medium_dim_8dp"
+                    app:srcCompat="@drawable/ic_apps_blue_24dp"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/medium_dim_8dp"
+                    app:srcCompat="@drawable/ic_format_list_bulleted_gray_24dp"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/medium_dim_8dp"
+                    app:srcCompat="@drawable/ic_person_gray_24dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/panel_profile_description">
+
+            <ImageView
+                style="@style/profile_image_list_style"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/e60_front"/>
+
+            <ImageView
+                style="@style/profile_image_list_style"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/bike_image"/>
+
+            <ImageView
+                style="@style/profile_image_list_style"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/e60_front"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

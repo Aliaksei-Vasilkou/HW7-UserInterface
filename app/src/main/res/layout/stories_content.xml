@@ -16,6 +16,7 @@
             style="@style/light_grey_panels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_dim_4dp"
             android:orientation="horizontal">
 
             <TextView
@@ -69,12 +70,12 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_1"
-                    style="@style/stories_card_style"
+                    style="@style/card_style"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:id="@+id/image_card_1"
-                        style="@style/stories_card_images_style"
+                        style="@style/card_images_style"
                         android:src="@drawable/image">
                     </ImageView>
                 </android.support.v7.widget.CardView>
@@ -94,12 +95,12 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_2"
-                    style="@style/stories_card_style"
+                    style="@style/card_style"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:id="@+id/image_card_2"
-                        style="@style/stories_card_images_style"
+                        style="@style/card_images_style"
                         android:src="@drawable/image">
                     </ImageView>
                 </android.support.v7.widget.CardView>
@@ -119,12 +120,12 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_3"
-                    style="@style/stories_card_style"
+                    style="@style/card_style"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:id="@+id/image_card_3"
-                        style="@style/stories_card_images_style"
+                        style="@style/card_images_style"
                         android:src="@drawable/image">
                     </ImageView>
                 </android.support.v7.widget.CardView>
@@ -144,12 +145,12 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_4"
-                    style="@style/stories_card_style"
+                    style="@style/card_style"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:id="@+id/image_card_4"
-                        style="@style/stories_card_images_style"
+                        style="@style/card_images_style"
                         android:src="@drawable/image">
                     </ImageView>
                 </android.support.v7.widget.CardView>
@@ -169,12 +170,12 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/card_5"
-                    style="@style/stories_card_style"
+                    style="@style/card_style"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:id="@+id/image_card_5"
-                        style="@style/stories_card_images_style"
+                        style="@style/card_images_style"
                         android:src="@drawable/image">
                     </ImageView>
                 </android.support.v7.widget.CardView>

@@ -17,14 +17,14 @@
     </style>
 
     <style name="light_grey_panels">
-        <item name="android:background">@color/colorLightGray</item>
+        <item name="android:background">@color/background_color_LightGray</item>
     </style>
 
     <style name="white_panels">
-        <item name="android:background">@color/colorWhite</item>
+        <item name="android:background">@color/background_color_White</item>
     </style>
 
-    <style name="stories_card_style">
+    <style name="card_style">
         <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">60dp</item>
         <item name="android:layout_margin">@dimen/medium_dim_8dp</item>
@@ -33,12 +33,18 @@
         <item name="android:thicknessRatio">2</item>
     </style>
 
-    <style name="stories_card_images_style">
+    <style name="card_images_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="card_style.UserProfile">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">@dimen/extra_large_dim_16dp</item>
     </style>
 
     <style name="small_card_style">
@@ -67,5 +73,29 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="profile_description_panel_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/extra_large_dim_16dp</item>
+        <item name="android:layout_marginRight">@dimen/extra_large_dim_16dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_marginBottom">@dimen/small_dim_4dp</item>
+    </style>
 
+    <style name="profile_counter_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="profile_image_list_style">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="profile_buttons_style">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/button_border</item>
+    </style>
 </resources>
