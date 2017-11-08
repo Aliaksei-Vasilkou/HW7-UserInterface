@@ -1,0 +1,54 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/user_profile_top_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        style="@style/light_grey_panels">
+
+        <RelativeLayout
+            android:id="@+id/user_profile_control_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/image_view_back_arrow"
+                android:layout_margin="@dimen/medium_dim_8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+
+            <TextView
+                android:id="@+id/text_view_owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view_back_arrow"
+                android:layout_toEndOf="@+id/image_view_back_arrow"
+                android:text="owner name"
+                style="@style/textColorBlack.Bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/extra_large_dim_16dp"
+                android:layout_marginStart="@dimen/extra_large_dim_16dp"/>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/image_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_more_vert_black_24dp"
+                android:layout_margin="@dimen/medium_dim_8dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/user_profile_control_panel"
+            android:background="@drawable/separator_line"/>
+
+    </RelativeLayout>
+</merge>

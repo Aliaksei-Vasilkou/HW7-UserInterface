@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/bottom_nav_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        style="@style/light_grey_panels">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/separator_line"/>
+
+        <LinearLayout
+                      xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_search_black_24dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_add_box_black_24dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_favorite_black_24dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/nav_buttons_style"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorTintWhite"
+                app:srcCompat="@drawable/ic_person_black_24dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</merge>

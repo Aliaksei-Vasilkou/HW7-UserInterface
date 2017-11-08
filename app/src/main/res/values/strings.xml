@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
     <string name="app_name">HW7-UserInterface</string>
+    <string name="text_view_stories_name">Stories</string>
+    <string name="text_view_watch_all_name">Watch all</string>
+    <string name="text_view_posts">posts</string>
+    <string name="text_view_followers">followers</string>
+    <string name="text_view_following">following</string>
+    <string name="test_count">123</string>
+    <string name="button_message_name">Message</string>
+    <string name="text_view_call_name">Call</string>
 </resources>
